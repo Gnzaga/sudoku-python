@@ -1,4 +1,3 @@
-from rs import tGrid
 import os
 class sudokuSolver:
     def __init__(self, grid):
