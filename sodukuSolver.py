@@ -118,12 +118,6 @@ class sudokuSolver:
         fhand.close()
 
 
-
-
-
-
-
-
 def runIt():
     oneMore=True
     while oneMore:
@@ -142,7 +136,10 @@ def runIt():
             else:
                 print("You did not enter enough digits, you gave %d when it should be 81\n .... \n" % len(grid))
                 print("Please try again\n")
-        if input('\nClick \"ENTER\" to continue again\n\n'):
+        t=input('\nClick \"ENTER\" to continue again\n\n')
+        if t:
+            if len(t)>0:
+                break
             pass
 
 runIt()
